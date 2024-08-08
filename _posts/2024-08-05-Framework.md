@@ -38,10 +38,24 @@ The power button was a devil to get working right. Initially I purchased a pcb w
 
 Hesitant to stretch myself even further I resisted the urge to learn PCB design and just bought the correct connector for the header, figured out which pins I meeded to bridge, and then soldered them to a circuit that the power button would complete. It only took 3 weeks to get that right! 
 
+After getting the header figured out I connected it up to the record button by running hook up wire to the lever arm that moved the original internals and a second wire that is placed so that the pressing of the record button touches the exposed wire, completing the circuit. Simple and straightforward!
+
 ## Wifi card 
+
+Thew only part of the framework mainboard that didn't fit in the guts of the casette player was the wifi card which was inserted via a M2 pcie slot. I looked for risers that might have been able to do a sharp 90° bend to get the card inside - to no avail. i had less than a centemeter to perform a 180 and attach the card.
+
+It wasn't really an option to run without it: Even if I didn't need wifi I _did_ need bluetooth. 
+
+The only option wad to cut through the case and print a cover for it. This was particularly nerve wracking because one misstep and I could end up with a botched case. Since it's vintage there's no guarantee of my finding a replacement. 
+
+Ultimately I needn't have worried: the cut went easily. 
 
 ## Battery sandwich
 
+The only way I could possibly power this beast was to fit the battery into the same frame. The battery is the same width as the mainboard so I had an easy enough time fitting it into the case. I used cad to carefully align the connector and then twisted the cable 180° to have it connect underneath itself. This remains the sketchiest part of this whole build.
+
 ## Field testing 
 
-## Soldering the wifi card after field tests
+The ultimate field test was use during my commute on the NYC subway. I decided on something easy to try: Vampire Survivors is a game that can be played with a 2 inputs: a joystick and a single button. I connected up a JoyCon via bluetooth and off I went. It mostly went well too - The ride there was no issue, the ride back however I struggled to get the JoyCon to reconnect. When I got home and took it all apart I found that the wifi card had come disconnected from its antennae - meaning the bluetooth was disconnected as well. I ran another test trying to see if I had just not secured the connectors well enough: same issue. 
+
+The only other option was to solder the connectors onto the wifi card directly. I didnt love this choice but saw no other way. I connected them up with some detaching connectors so it could still be pulled apart... and success! I could go to and from work with the deck on and running.
